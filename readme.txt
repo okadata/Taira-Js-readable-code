@@ -1,17 +1,17 @@
 C++
 
-# ���s�菇
+# 実行手順
 
-1. <Windows�̏ꍇ>
-�@�@Visual Studio 2017�ňȉ���sln�t�@�C����ǂݍ��݃r���h���Ă��������B
-�@�@DicApp\DicApp.sln
+1. <Windowsの場合>
+　　Visual Studio 2017で以下のslnファイルを読み込みビルドしてください。
+　　DicApp\DicApp.sln
 
-�@ <Windows�ȊO�̏ꍇ>
-�@�@�ȉ��̃t�@�C�������ɍ��킹�Ď�荞�݃r���h���Ă�������
-�@�@DicApp\DicApp\DicApp.cpp
+　 <Windows以外の場合>
+　　以下のファイルを環境に合わせて取り込みビルドしてください
+　　DicApp\DicApp\DicApp.cpp
 
-2. ���s��A�R���\�[����"���"�ƕ\�����ꂽ�琬���ł��B
-   ��Shift_JIS�ŏo�͂���܂��B
+2. 実行後、コンソールに"上手"と表示されたら成功です。
+   ※Shift_JISで出力されます。
 
 
 
