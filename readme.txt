@@ -10,6 +10,9 @@ C++
 　 <Windows以外の場合>
 　　以下のファイルを環境に合わせて取り込みビルドしてください
 　　DicApp\DicApp\DicApp.cpp
+　　　<Macの場合>
+　　　　　以下のコマンドでビルドする
+　　　　　gcc -lstdc++ ./DicApp/DicApp/DicApp.cpp -o 実行ファイル
 
 2. データファイルの用意
    ワークフォルダに「dictionary_data.txt」というテキストファイルを作成します。
