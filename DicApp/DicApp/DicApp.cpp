@@ -1,7 +1,8 @@
 // DicApp.cpp : アプリケーションのエントリ ポイントを定義します。
 //
 
-#include "stdafx.h"
+// macOSでは存在しないヘッダがincludeされて、ビルドできないためコメントアウト
+//#include "stdafx.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -30,8 +31,9 @@ void output_word(const word_info& aWord)
 Words load_dictionary_data()
 {
     Words xWords;
-     
-    std::ifstream xfs(".¥¥dictionary_data.txt");
+    
+    // macOSでの動作のために、ファイルセパレータを\\から/に変更
+    std::ifstream xfs("./dictionary_data.txt");
     if (xfs.fail()) {
         return xWords;
     }
