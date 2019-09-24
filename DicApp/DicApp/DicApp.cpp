@@ -1,4 +1,4 @@
-// DicApp.cpp : ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒGƒ“ƒgƒŠ ƒ|ƒCƒ“ƒg‚ğ’è‹`‚µ‚Ü‚·B
+// DicApp.cpp : ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ã‚¨ãƒ³ãƒˆãƒª ãƒã‚¤ãƒ³ãƒˆã‚’å®šç¾©ã—ã¾ã™ã€‚
 //
 
 #include "stdafx.h"
@@ -14,13 +14,13 @@ typedef std::string     word_info;
 typedef std::vector<word_info> Words;
 const size_t kReadBufSize = 256;
 
-// w’è‚µ‚½•¶š—ñ‚ğ1sƒRƒ“ƒ\[ƒ‹‚Éo—Í‚·‚é
+// æŒ‡å®šã—ãŸæ–‡å­—åˆ—ã‚’1è¡Œã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«å‡ºåŠ›ã™ã‚‹
 void output_line(const String& aString)
 {
     std::cout << aString.c_str() << std::endl;
 }
 
-// ’PŒê‚ğ‚P‚ÂƒRƒ“ƒ\[ƒ‹‚Éo—Í‚·‚é
+// å˜èªã‚’ï¼‘ã¤ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«å‡ºåŠ›ã™ã‚‹
 void output_word(const word_info& aWord)
 {
     output_line(aWord);
@@ -31,7 +31,7 @@ Words load_dictionary_data()
 {
     Words xWords;
      
-    std::ifstream xfs(".\\dictionary_data.txt");
+    std::ifstream xfs(".Â¥Â¥dictionary_data.txt");
     if (xfs.fail()) {
         return xWords;
     }
